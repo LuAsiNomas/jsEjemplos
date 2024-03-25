@@ -71,7 +71,7 @@ if(num<0){
 function ejercicio5(){
     let n = prompt("elija su número:");
     let fac = n;
-    let resultado = 0;
+    let resultado = 1;
 
     for(x = n; x > 0; x--){
         console.log(x);
