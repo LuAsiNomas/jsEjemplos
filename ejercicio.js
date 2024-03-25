@@ -75,7 +75,7 @@ function ejercicio5(){
 
     for(x = n; x > 0; x--){
         console.log(x);
-        resulado = fac*x;
+        resultado = fac*x;
         console.log(resultado);
     }
 }
