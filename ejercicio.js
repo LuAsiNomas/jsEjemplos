@@ -70,14 +70,12 @@ if(num<0){
 
 function ejercicio5(){
     let n = prompt("elija su número:");
-    let fac = 1;
+    let fac = n;
+    let resultado = 0;
 
-    for(x = 1; x <= n; x++){
+    for(x = n; x > 0; x--){
         console.log(x);
-        fac = x*n;
-        console.log(fac);
+        resulado = fac*x;
+        console.log(resultado);
     }
-
-    console.log(fac);
-
 }
