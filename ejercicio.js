@@ -69,5 +69,7 @@ if(num<0){
 //5
 
 function ejercicio5(){
-    
+    if(){
+        
+    }
 }
