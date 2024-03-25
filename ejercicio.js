@@ -72,6 +72,6 @@ function ejercicio5(){
     let n = prompt("elija su número:");
 
     for(x = n-1; x > 0; x--){
-        console.log(x);
+        console.log(x*n);
     }
 }
