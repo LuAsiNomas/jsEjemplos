@@ -94,23 +94,35 @@ function ejercicio6(){
 
 function ejercicio7(){
     var oracion = prompt("Escriba su oración:");
-    var estring = oracion.trim;
-    var comparacion = estring.toLowerCase;
-    var comparacion2 = estring.toUpperCase;
+    let estring = oracion.trim();
+    console.log(estring);
+    var comparacion = estring.toLowerCase();
+    var comparacion2 = estring.toUpperCase();
+    console.log(comparacion);
+    console.log(comparacion2);
     var contmay = 0;
     var contmin = 0;
-    var may = Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Ñ,Z,X,C,V,B,N,M;
-    var min = q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m;
 
 
-    for(x = 0; x <= oracion.length; x++){
-        if (estring[x] === comparacion[x]) {
+    for(x = 0; x < oracion.length; x++){
+        if (estring.charAt(x) === comparacion.charAt(x)) {
             contmin++;
-        }
-        if (estring[x] === comparacion2[x]) {
+        }else if (estring.charAt(x) === comparacion2.charAt(x)) {
             contmay++;
         }
     }
-    if(contmin)
+    if(contmin < contmay && contmin == 0){
+        console.log("La oración está formada por solo letras mayusculas.");
+        console.log(contmin);
+        console.log(contmay);
+    }else if(contmay < contmin && contmay == 0){
+        console.log("La oración está compuesta por solo letras minusculas.");
+        console.log(contmin);
+        console.log(contmay);
+    }else if (contmay >= 1 && contmin >= 1){
+        console.log("La oración está compuesta por mayusculas y minusculas.")
+        console.log(contmin);
+        console.log(contmay);
+    }
     
 }
