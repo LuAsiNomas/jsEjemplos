@@ -70,12 +70,47 @@ if(num<0){
 
 function ejercicio5(){
     let n = prompt("elija su número:");
-    let fac = n;
     let resultado = 1;
 
-    for(x = n; x > 0; x--){
-        console.log(x);
-        resultado = fac*x;
-        console.log(resultado);
+    for(x = 1; x >= n; x++){
+        resultado = resultado*x;
     }
+    console.log("El factorial de " + n + " es " + resultado);
+}
+//6
+
+function ejercicio6(){
+    let entero = prompt("elija su número:");
+    let resto = entero % 2;
+    if(resto == 0){
+        console.log("Su número es par.");
+    }else if(resto == 1){
+        console.log("Su número es impar.");
+    }else{
+        console.loog("Algo anda mal.");
+    }
+}
+//7
+
+function ejercicio7(){
+    var oracion = prompt("Escriba su oración:");
+    var estring = oracion.trim;
+    var comparacion = estring.toLowerCase;
+    var comparacion2 = estring.toUpperCase;
+    var contmay = 0;
+    var contmin = 0;
+    var may = Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Ñ,Z,X,C,V,B,N,M;
+    var min = q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m;
+
+
+    for(x = 0; x <= oracion.length; x++){
+        if (estring[x] === comparacion[x]) {
+            contmin++;
+        }
+        if (estring[x] === comparacion2[x]) {
+            contmay++;
+        }
+    }
+    if(contmin)
+    
 }
