@@ -126,3 +126,22 @@ function ejercicio7(){
     }
     
 }
+function ejercicio8(){
+    var texto = prompt("Ingre su palindromo:");
+    var compara = texto.replace(/ /g, "").toLowerCase();
+    var coin = 0;
+    let y = compara.length-1;
+    for(x = 0; x < compara.length; x++){
+            if(compara.charAt(x) === compara.charAt(y)){
+                coin++;
+            }
+        y--;
+    }
+    if(coin == compara.length){
+        console.log(coin);
+        console.log("El texto ingresado es palindromo");
+    }else{
+        console.log(coin);
+        console.log("El texto no es palindromo");
+    }
+}
