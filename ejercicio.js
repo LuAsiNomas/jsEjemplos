@@ -145,3 +145,35 @@ function ejercicio8(){
         console.log("El texto no es palindromo");
     }
 }
+function ejercicio10(){
+    cont1 = 0;
+    cont2 = 0;
+    cont3 = 0;
+    cont4 = 0;
+    cont5 = 0;
+    cont6 = 0;
+
+    dados = 0;
+
+    for(x = 0; x < 36000; x++){
+    dad1 = Math.random() * (6 - 1) + 1;
+    dad2 = Math.random() * (6 - 1) + 1;
+    dado1 = Math.round(dad1);
+    dado2 = Math.round(dad2);
+    dados = dado1+dado2;
+    if(dados == 1){
+        cont1 = cont1++;
+    }else if(dados == 2){
+        cont2 = cont2++;
+    }else if(dados == 3){
+        cont3 = cont3++;
+    }else if(dados == 4){
+        cont4 = cont4++;
+    }else if(dados == 5){
+        cont5 = cont5++;
+    }else if(dados == 6){
+        cont6 = cont6++;
+    }
+}
+    console.log(cont1,cont2,cont3,cont4,cont5,cont6);
+}
