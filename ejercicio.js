@@ -6,7 +6,6 @@ function ejercicio1(){
     }
 }
 
-//2
 function ejercicio2(){
 var valores = [true, 5, false, "hola", "adios", 2];
 
@@ -28,7 +27,7 @@ console.log(valores[5] - valores[1]);
 
 
 }
-//3
+
 function ejercicio3(){
 var numero1 = 5;
 var numero2 = 8;
@@ -50,7 +49,7 @@ if(numero1 + 1 < numero2) {
 }
 
 }
-//4
+
 function ejercicio4(){
     var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
@@ -66,7 +65,6 @@ if(num<0){
     console.log(letra);
 }
 }
-//5
 
 function ejercicio5(){
     let n = prompt("elija su número:");
@@ -77,7 +75,6 @@ function ejercicio5(){
     }
     console.log("El factorial de " + n + " es " + resultado);
 }
-//6
 
 function ejercicio6(){
     let entero = prompt("elija su número:");
@@ -90,7 +87,6 @@ function ejercicio6(){
         console.loog("Algo anda mal.");
     }
 }
-//7
 
 function ejercicio7(){
     var oracion = prompt("Escriba su oración:");
@@ -152,28 +148,46 @@ function ejercicio10(){
     cont4 = 0;
     cont5 = 0;
     cont6 = 0;
+    cont7 = 0;
+    cont8 = 0;
+    cont9 = 0;
+    cont10 = 0;
+    cont11 = 0;
+    cont12 = 0;
 
     dados = 0;
+
 
     for(x = 0; x < 36000; x++){
     dad1 = Math.random() * (6 - 1) + 1;
     dad2 = Math.random() * (6 - 1) + 1;
     dado1 = Math.round(dad1);
     dado2 = Math.round(dad2);
-    dados = dado1+dado2;
-    if(dados == 1){
-        cont1 = cont1++;
-    }else if(dados == 2){
-        cont2 = cont2++;
+    dados = dado1 + dado2;
+    
+    if(dados == 2){
+        cont2 = cont2 +1;
     }else if(dados == 3){
-        cont3 = cont3++;
+        cont3 = cont3 + 1;
     }else if(dados == 4){
-        cont4 = cont4++;
+        cont4 = cont4 + 1;
     }else if(dados == 5){
-        cont5 = cont5++;
+        cont5 = cont5 + 1;
     }else if(dados == 6){
-        cont6 = cont6++;
+        cont6 = cont6 + 1;
+    }else if(dados == 7){
+        cont7 = cont7 + 1;
+    }else if(dados == 8){
+        cont8 = cont8 + 1;
+    }else if(dados == 9){
+        cont9 = cont9 + 1;
+    }else if(dados == 10){
+        cont10 = cont10 + 1;
+    }else if(dados == 11){
+        cont11 = cont11 + 1;
+    }else if(dados == 12){
+        cont12 = cont12 + 1;
     }
 }
-    console.log(cont1,cont2,cont3,cont4,cont5,cont6);
+    console.log(cont2," veces 2 ",cont3," veces 3 ",cont4," veces 4 ",cont5," veces 5 ",cont6," veces 6",cont7," veces 7 ",cont8," veces 8 ",cont9," veces 9 ",cont10," veces 10 ",cont11," veces 11 ",cont12," veces 12 ");
 }
